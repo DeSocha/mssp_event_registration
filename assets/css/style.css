@@ -1,0 +1,387 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.login-box img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-box .form-control {
+    margin-bottom: 20px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.login-box button {
+    width: 100%;
+    height: 50px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #0056b3;
+}
+
+.login-box a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+/* Error message styling */
+.login-box .error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+/* Event List Table Styling */
+.event-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px; /* General smaller font size */
+}
+
+.event-list-table th {
+    background-color: #f8f9fa; 
+    font-weight: 700; /* Make table headers bold */
+    font-size: 14px;  /* Keep headers slightly larger */
+    padding: 6px 10px; /* Reduced padding */
+}
+
+.event-list-table td {
+    font-size: 12px;  /* Smaller font for table data */
+    font-weight: 600; /* Make table data bolder */
+    padding: 5px 8px; /* Reduced padding for table cells */
+    vertical-align: middle; /* Align content vertically in the middle */
+}
+
+/* Make specific elements like titles and descriptions smaller and bold */
+.event-list-table td:nth-child(2), /* Title column */
+.event-list-table td:nth-child(3), /* Description column */
+.event-list-table td:nth-child(4) { /* Details column */
+    font-weight: 700; /* Bold */
+    font-size: 12px;  /* Slightly smaller font */
+}
+
+/* Status pill for the Done status */
+.status-pill {
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Action buttons styling */
+.action-buttons .btn {
+    font-size: 12px; /* Small buttons */
+    padding: 4px 8px; /* Adjust padding */
+    margin: 0 2px; /* Space between buttons */
+}
+
+/* Hover effect */
+.event-list-table tr:hover {
+    background-color: #e9ecef; /* Lighter color on hover */
+}
+
+/* Responsive handling */
+@media (max-width: 768px) {
+    .event-list-table th, .event-list-table td {
+        font-size: 11px; /* Even smaller font for mobile */
+        padding: 4px;
+    }
+}
+
+/* Small and bold text for table data */
+table td.small-bold {
+    font-size: 12px !important;  /* Ensure font size is small */
+    font-weight: bold !important; /* Ensure font is bold */
+    color: #333 !important;  /* Optional: Ensure color is dark for better readability */
+}
+
+/* Make the text inside the span with class 'unbold' normal weight (unbold) */
+.unbold {
+    font-weight: normal !important;
+}
+
+
+
+
+
+.sidebar {
+    background-color: #2c3e50;
+    height: 100vh;
+    position: fixed;
+    width: 220px;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar-header .logo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.sidebar-header h4 {
+    margin: 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin: 10px 0;
+}
+
+.sidebar-menu a {
+    display: block;
+    color: #bfc9d3;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.sidebar-menu a:hover, .sidebar-menu a.active {
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.top-bar {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dashboard-cards .card {
+    width: 23%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-cards .card i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.dashboard-cards .card h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.dashboard-cards .card p {
+    font-size: 24px;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+.sidebar-menu li a.active {
+    background-color: #2980b9; /* Highlight color */
+    color: #fff;
+}
+
+.username {
+    color: green;
+    font-weight: normal; /* Optional: Makes the username bold */
+}
+.sidebar-divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd; /* Light gray color for the divider */
+    margin: 15px 0; /* Optional: Adds some spacing around the line */
+}
+/* Style for Audience List */
+#audienceTable th {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#audienceTable td {
+    font-size: 12px;
+    font-weight: 600; /* Make text bold */
+}
+
+#audienceTable td .unbold {
+    font-weight: normal; /* Reset font weight for non-bold text */
+    font-size: 12px;
+}
+
+/* Adjust button sizes for Edit and Delete */
+.btn-primary.btn-sm, .btn-danger.btn-sm {
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+/* Modal styling for Audience List */
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+.modal-footer .btn-primary {
+    background-color: #007bff;
+}
+
+/* Read-only field styling */
+input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Header Section */
+/* Header Section */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 250px; /* Align to the right of the sidebar (assuming sidebar width is 250px) */
+    width: calc(100% - 250px); /* Adjust header width to not overlap the sidebar */
+    z-index: 1000;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    padding: 10px 20px; /* Adjust the padding for header spacing */
+    border-bottom: 1px solid #ddd; /* Optional border for separation */
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Sidebar width */
+    height: 100%;
+    background-color: #343a40; /* Sidebar background color */
+    padding: 15px;
+    z-index: 1000;
+    color: #fff;
+}
+
+/* Ensuring the content is pushed below the fixed header */
+.main-content {
+    padding-top: 60px; /* Header height (adjust accordingly) */
+    margin-left: 250px; /* To avoid overlap with sidebar */
+}
+
+/* Logo or system name in the header */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333; /* Dark color for text */
+}
+
+/* Align the logout button and settings icon */
+.navbar .ml-auto {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the buttons */
+.navbar .btn {
+    margin-left: 10px; /* Spacing between buttons */
+}
+
+.navbar .btn-danger {
+    background-color: #dc3545; /* Red logout button */
+    border: none;
+}
+
+.navbar .btn-light {
+    background-color: #f8f9fa; /* Light background for the settings button */
+    border: none;
+}
+
+/* Toggle Sidebar button style */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    background-color: transparent; /* Hide background */
+    font-size: 1.5rem; /* Size for the bars icon */
+}
+
+/* Ensuring the content is pushed below the fixed header */
+.main-content {
+    padding-top: 60px; /* Header height (adjust accordingly) */
+}

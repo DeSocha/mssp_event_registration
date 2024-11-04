@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background for the page */
+
+     margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Badge Styles for Event Status */
+.badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+/* Event Search Styles */
+#searchEvent {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#searchBtn {
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#searchBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: inherit; /* Inherit the body background color */
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: center;
+    margin: 0;
+}

@@ -1,0 +1,36 @@
+/* Set a smaller font size globally */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background for the page */
+
+     margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h4, .card-title {
+    font-size: 18px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.navbar, .nav-link {
+    font-size: 14px;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* Style the Scan QR Button to ensure it is centered and prominent */
+.btn-lg {
+    font-size: 16px;
+    padding: 10px 20px;
+}
